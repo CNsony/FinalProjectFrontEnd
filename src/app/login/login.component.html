@@ -1,0 +1,23 @@
+<div class="login-form">
+  <div class="top-login">
+    <span><img [src]="background_img" alt="group" /></span>
+  </div>
+  <h1>Student Attendance Check System</h1>
+  <div class="login-top">
+    <form action="">
+      <div class='login-ic'>
+        <i></i>
+        <input type="text" placeholder="Please enter your username" required [(ngModel)]='model.name' name="name">
+        <div class="clear"></div>
+      </div>
+      <div class="login-ic">
+        <i class="icon"></i>
+        <input type="password" placeholder="Please enter your password" required [(ngModel)]='model.password' name="password">
+        <div class="clear"></div>
+      </div>
+      <div class='log-bwn'>
+        <input value="Login" id='add-user' (click)='login();'>
+      </div>
+    </form>
+  </div>
+</div>
