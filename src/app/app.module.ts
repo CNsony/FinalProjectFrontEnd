@@ -18,6 +18,9 @@ import { MessageService }       from './message.service';
 import { MessagesComponent }    from './messages/messages.component';
 import { LoginComponent }       from './login/login.component';
 import { LoginService }         from './service/login/login.service';
+import { UploadComponent } from './upload/upload.component';
+import { RoleManagementComponent } from './role-management/role-management.component';
+import { AdminManagementComponent } from './admin-management/admin-management.component';
 
 @NgModule({
   imports: [
@@ -41,7 +44,10 @@ import { LoginService }         from './service/login/login.service';
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent,
-    LoginComponent
+    LoginComponent,
+    UploadComponent,
+    RoleManagementComponent,
+    AdminManagementComponent
   ],
   // service registration
   providers: [ HeroService, MessageService, LoginService ],

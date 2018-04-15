@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Login} from '../model/login'
 import {LoginService} from '../service/login/login.service'
+import { Router } from '@angular/router';
+import { Cookie } from 'ng2-cookies';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -12,15 +14,22 @@ export class LoginComponent implements OnInit {
   message = ""
 
   constructor(
-    private loginService: LoginService
+    private loginService: LoginService,
+    private router: Router
   ) { }
 
   login():void{
-    this.loginService.searchLogin(this.model);
+    
+    if(this.loginService.searchLogin(this.model)){
+      
+      this.router.navigate(['/dashboard'])
+    };
   }
   
   ngOnInit(){
-
+    if(Cookie.get("login")!==null){
+      this.router.navigate(['/dashboard'])
+    }
   }
 
 }

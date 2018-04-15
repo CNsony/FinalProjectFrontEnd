@@ -346,10 +346,7 @@ footer a, footer a:hover {
 #log_info{
     float: right;
 }
-#file-upload{
-    opacity: 0;
-    display: none;
-}
+
 #upload-area{
     width: 40%;
     background-color: #d2d2d2;
