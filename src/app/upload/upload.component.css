@@ -1,0 +1,10 @@
+#file-upload{
+  position: absolute;
+  height: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  top: 0;
+  cursor: pointer;
+  opacity: 0;
+}
