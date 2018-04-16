@@ -1,16 +1,11 @@
 import { Component, OnInit, NgModule } from '@angular/core';
-import {DataTableModule} from "angular2-datatable"
 
 @Component({
   selector: 'app-role-management',
   templateUrl: './role-management.component.html',
   styleUrls: ['./role-management.component.css']
 })
-@NgModule({
-  imports:[
-    DataTableModule
-]
-})
+
 export class RoleManagementComponent implements OnInit {
   private mf;
   constructor() {
